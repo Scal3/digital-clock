@@ -1,0 +1,44 @@
+:root {
+  --blue: blue;
+  --pink: pink;
+  --content-background-color: rgba(128, 128, 128, 0.177);
+  --title-color: #fff;
+
+  --fonts: Arial, Helvetica, sans-serif;
+  --mobile-font-size: 3em;
+  --desctop-font-size: 5em;
+
+  --default-padding: 2%;
+}
+
+.body {
+  background: linear-gradient(var(--blue), var(--pink));
+  background-repeat: no-repeat;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fonts);
+}
+
+.content {
+  background-color: var(--content-background-color);
+  display: flex;
+  padding: var(--default-padding);
+}
+
+.content-title {
+  margin: 0;
+  padding: 0;
+  font-size: var(--mobile-font-size);
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .content-title {
+    font-size: var(--desctop-font-size);
+  }
+}

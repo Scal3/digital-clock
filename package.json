@@ -1,0 +1,16 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start:build": "tsc --w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
